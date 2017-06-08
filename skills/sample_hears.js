@@ -17,7 +17,7 @@ module.exports = function(controller) {
     var stats = {
         triggers: 0,
         convos: 0,
-    }
+    };
 
     controller.on('heard_trigger', function() {
         stats.triggers++;
@@ -52,7 +52,7 @@ module.exports = function(controller) {
                 bot.reply(message, '_sigh_');
             }
         } else {
-            bot.reply(message, 'I will repeat whatever you say.')
+            bot.reply(message, 'I will repeat whatever you say.');
         }
     });
 
