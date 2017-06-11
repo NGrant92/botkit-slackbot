@@ -25,7 +25,7 @@ module.exports = function(controller) {
           });
 
       });
-          controller.hears(['github'], 'direct_message,direct_mention', function(bot, message) {
+          controller.hears(['Hello'], 'direct_message,direct_mention', function(bot, message) {
 
               bot.startConversation(message, function(err, convo) {
 
